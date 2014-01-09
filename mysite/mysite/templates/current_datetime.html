@@ -1,7 +1,7 @@
-<html>
-	<body>
-		{% include 'hours_ahead.html' %}
-		<br></br>
-		It is now {{ current_date }}.
-	</body>
-</html>
+{% extends "base.html" %}
+
+{% block title%} The Current time {% endblock %}
+
+{% block content %}
+It is now {{ current_date }}.
+{% endblock %}
